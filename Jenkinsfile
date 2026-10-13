@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -20,11 +21,11 @@ pipeline {
             }
         }
 
-        stage('Execute code') {
+        stage('Run code') {
             steps {
                 sh 'java Test'
             }
         }
-
     }
 }
+
